@@ -22,7 +22,6 @@ public class DummyEnemy : MonoBehaviour
 
     private void Awake()
     {
-        // 김주승
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(destinations[0].position);
     } 
