@@ -101,7 +101,7 @@ public class StepPoolManager : MonoBehaviour
         {
             var step = stepQueue.Dequeue();
             step.transform.SetParent(null);
-            step.transform.position = new Vector3(pos.x, 0, pos.z);
+            step.transform.position = new Vector3(pos.x, pos.y - 1f, pos.z);
             step.transform.rotation = rot;
 
             step.gameObject.SetActive(true);
